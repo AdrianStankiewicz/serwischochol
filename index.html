@@ -4,9 +4,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Using Tailwind Play CDN for simplicity - replace with your build setup -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Chochół Serwis - Serwis Kotłów Gazowych</title>
+
+    <title>Chochół Serwis - Serwis Kotłów i Pieców Gazowych Gdynia i Trójmiasto</title>
+    <meta name="description"
+        content="Profesjonalny pogwarancyjny serwis i naprawa kotłów i pieców gazowych (Bosch, Buderus, Junkers, Viessmann, Beretta, Saunier Duval, Termet) w Gdyni, Trójmieście i okolicach. Obsługa wspólnot.">
+    <!-- Canonical URL - Crucial for avoiding duplicate content -->
+    <link rel="canonical" href="https://serwischochol.pl/">
+
+    <!-- ===== Open Graph / Social Media Meta Tags ===== -->
+    <meta property="og:title" content="Chochół Serwis - Serwis Kotłów i Pieców Gazowych Gdynia i Trójmiasto">
+    <meta property="og:description"
+        content="Profesjonalny pogwarancyjny serwis i naprawa kotłów i pieców gazowych (Bosch, Buderus, Junkers, Viessmann i inne) w Gdyni, Trójmieście i okolicach.">
+    <meta property="og:image" content="https://serwischochol.pl/resources/images/chochol_serwis.png">
+
+    <!-- ===== Schema.org Markup (JSON-LD) ===== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HVACBusiness",
+      "name": "Chochół Serwis",
+      "@id": "https://serwischochol.pl/",
+      "url": "https://serwischochol.pl/",
+      "logo": "https://serwischochol.pl/resources/images/chochol_serwis.png",
+      "description": "Profesjonalny pogwarancyjny serwis i naprawa kotłów i pieców gazowych (Bosch, Buderus, Junkers, Viessmann, Beretta, Saunier Duval, Termet) w Gdyni, Trójmieście i okolicach. Oferujemy również obsługę wspólnot mieszkaniowych.",
+      "telephone": "+48452221328",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Gdynia",
+        "addressRegion": "Pomorskie",
+        "addressCountry": "PL"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "54.5189",
+        "longitude": "18.5305"
+      },
+      // Define opening hours clearly
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "https://schema.org/Monday",
+            "https://schema.org/Tuesday",
+            "https://schema.org/Wednesday",
+            "https://schema.org/Thursday"
+            "https://schema.org/Friday"
+            "https://schema.org/Saturday"
+            "https://schema.org/Sunday"
+          ],
+          "opens": "08:00",
+          "closes": "17:00"
+        }
+      ],
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Gdynia"
+        },
+        {
+          "@type": "City",
+          "name": "Sopot"
+        },
+        {
+          "@type": "City",
+          "name": "Gdańsk"
+        },
+        {
+          "@type": "City",
+          "name": "Rumia"
+        },
+        {
+          "@type": "City",
+          "name": "Reda"
+        },
+        {
+          "@type": "City",
+          "name": "Wejherowo"
+        },
+        {
+          "@type": "City",
+          "name": "Puck"
+        },
+        {
+            "@type": "AdministrativeArea", // Broader area
+            "name": "Trójmiasto i okolice"
+        }
+      ],
+      "sameAs": [
+        "https://fixly.pl/profil/wpdg6wkl"
+        "https://www.facebook.com/people/Chochół-Serwis-Dawid-Chochół/61572947396676/?mibextid=wwXIfr"
+      ]
+    }
+    </script>
+
 </head>
 
 <body class="flex flex-col bg-gray-50"> <!-- Added a light base background -->
@@ -31,17 +121,20 @@
     <section class="w-full bg-gradient-to-br from-blue-50 via-white to-blue-100 py-12 md:py-20">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-blue-900 mb-5 tracking-tight">
-                Serwis kotłów gazowych<br>
-                <span class="bg-gradient-to-r from-blue-600 to-green-400 bg-clip-text text-transparent">szybko, bezpiecznie, profesjonalnie</span>
+                Serwis kotłów i pieców gazowych<br>
+                <span class="bg-gradient-to-r from-blue-600 to-green-400 bg-clip-text text-transparent">szybko,
+                    bezpiecznie, profesjonalnie</span>
             </h1>
             <p class="text-lg md:text-xl text-blue-800 mb-10 max-w-3xl mx-auto">
                 Zadbaj o sprawność i bezpieczeństwo swojego ogrzewania.
                 Umów serwis ze sprawdzonym specjalistą w kilka chwil.
             </p>
-            <a href="tel:+48452221328" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-10 rounded-full shadow-lg text-xl md:text-2xl transition transform hover:scale-105">
+            <a href="tel:+48452221328"
+                class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-10 rounded-full shadow-lg text-xl md:text-2xl transition transform hover:scale-105">
                 Zadzwoń i umów wizytę
             </a>
-            <div class="mt-5 text-blue-500 text-sm">Działamy w: Gdynia, Sopot, Gdańsk, Rumia, Reda, Wejherowo, Puck i okolice.<br>Dostępni 7 dni w tygodniu</div>
+            <div class="mt-5 text-blue-500 text-sm">Działamy w: Gdynia, Sopot, Gdańsk, Rumia, Reda, Wejherowo, Puck i
+                okolice.<br>Dostępni 7 dni w tygodniu</div>
         </div>
     </section>
 
@@ -49,41 +142,49 @@
     <!-- BRANDS & SERVICES -->
     <section class="w-full bg-white py-12 md:py-20">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-10 text-center">Obsługiwane marki i zakres usług</h2>
+            <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-10 text-center">Obsługiwane marki i zakres usług
+            </h2>
             <div class="flex flex-wrap justify-center items-center gap-x-10 md:gap-x-16 gap-y-6 mb-12">
-                <img src="resources/images/Bosch-logo.png" alt="Bosch logo" class="h-6 md:h-12 object-contain" /> <!-- Removed fixed width, adjusted height -->
-                <img src="resources/images/Buderus-logo-new.jpeg" alt="Buderus logo" class="h-6 md:h-12 object-contain" />
+                <img src="resources/images/Bosch-logo.png" alt="Bosch logo" class="h-6 md:h-12 object-contain" />
+                <!-- Removed fixed width, adjusted height -->
+                <img src="resources/images/Buderus-logo-new.jpeg" alt="Buderus logo"
+                    class="h-6 md:h-12 object-contain" />
                 <img src="resources/images/Beretta-logo.png" alt="Beretta logo" class="h-6 md:h-12 object-contain" />
                 <img src="resources/images/Junkers-logo.png" alt="Junkers logo" class="h-6 md:h-12 object-contain" />
-                <img src="resources/images/Saunier_Duval-logo.png" alt="Saunier Duval logo" class="h-6 md:h-12 object-contain" />
-                <img src="resources/images/Viessmann-logo.png" alt="Viessmann logo" class="h-6 md:h-12 object-contain" />
+                <img src="resources/images/Saunier_Duval-logo.png" alt="Saunier Duval logo"
+                    class="h-6 md:h-12 object-contain" />
+                <img src="resources/images/Viessmann-logo.png" alt="Viessmann logo"
+                    class="h-6 md:h-12 object-contain" />
                 <img src="resources/images/Termet-logo.png" alt="Termet logo" class="h-6 md:h-12 object-contain" />
-                <img src="resources/images/Panasonic-logo.png" alt="Panasonic logo" class="h-6 md:h-12 object-contain" />
+                <img src="resources/images/Panasonic-logo.png" alt="Panasonic logo"
+                    class="h-6 md:h-12 object-contain" />
                 <img src="resources/images/York-logo.png" alt="York logo" class="h-6 md:h-12 object-contain" />
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-6 mb-10">
                 <!-- Grid layout for services on medium screens and up -->
                 <div class="flex items-start md:items-center gap-3 p-4 rounded-lg bg-gray-50/50">
-                  <span class="text-2xl mt-1 md:mt-0 md:text-6xl">🤝</span>
-                  <span class="text-blue-900 text-base md:text-xl">
-                    Współpraca z <span class="font-bold">autoryzowanymi serwisami</span>
-                  </span>
+                    <span class="text-2xl mt-1 md:mt-0 md:text-6xl">🤝</span>
+                    <span class="text-blue-900 text-base md:text-xl">
+                        Współpraca z <span class="font-bold">autoryzowanymi serwisami</span>
+                    </span>
                 </div>
                 <div class="flex items-start md:items-center gap-3 p-4 rounded-lg bg-gray-50/50">
-                  <span class="text-2xl mt-1 md:mt-0 md:text-6xl">💡</span>
-                  <span class="text-blue-900 text-base md:text-xl">
-                    Audyty energetyczne <br class="hidden md:inline"> dla <span class="font-bold">optymalizacji zużycia</span>
-                  </span>
+                    <span class="text-2xl mt-1 md:mt-0 md:text-6xl">💡</span>
+                    <span class="text-blue-900 text-base md:text-xl">
+                        Audyty energetyczne <br class="hidden md:inline"> dla <span class="font-bold">optymalizacji
+                            zużycia</span>
+                    </span>
                 </div>
                 <div class="flex items-start md:items-center gap-3 p-4 rounded-lg bg-gray-50/50">
-                  <span class="text-2xl mt-1 md:mt-0 md:text-6xl">💰</span>
-                  <span class="text-blue-900 text-base md:text-xl">
-                    <span class="font-bold">Bezpłatna wycena</span> montażu i dobór <span class="font-bold">optymalnych rozwiązań</span>
-                  </span>
+                    <span class="text-2xl mt-1 md:mt-0 md:text-6xl">💰</span>
+                    <span class="text-blue-900 text-base md:text-xl">
+                        <span class="font-bold">Bezpłatna wycena</span> montażu i dobór <span
+                            class="font-bold">optymalnych rozwiązań</span>
+                    </span>
                 </div>
             </div>
-            
+
             <div class="text-blue-700 text-sm text-center border-t pt-6 mt-6">
                 Współpracujemy z <span class="font-semibold">Centrum Serwisowym Pyzik</span> - polecamy ich usługi.<br>
                 Kontakt: <a href="tel:517623833" class="underline hover:text-blue-900">517 623 833</a>
@@ -94,25 +195,29 @@
     <!-- COMMUNITY SERVICES -->
     <section class="w-full bg-blue-50 py-16 md:py-20">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-10 text-center">Obsługa wspólnot mieszkaniowych</h2>
+            <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-10 text-center">Obsługa wspólnot mieszkaniowych
+            </h2>
 
             <div class="space-y-6 max-w-2xl mx-auto">
                 <div class="flex items-start gap-4 items-center">
                     <span class="text-2xl mt-1 md:text-6xl">🧹</span>
                     <span class="text-blue-900 text-xl">
-                        <span class="font-bold">Utrzymanie czystości</span> w częściach wspólnych budynków (klatki schodowe, korytarze, parkingi)
+                        <span class="font-bold">Utrzymanie czystości</span> w częściach wspólnych budynków (klatki
+                        schodowe, korytarze, parkingi)
                     </span>
                 </div>
                 <div class="flex items-start gap-4 items-center">
                     <span class="text-2xl mt-1 md:text-6xl">🌳</span>
                     <span class="text-blue-900 text-xl">
-                        <span class="font-bold">Pielęgnacja ogrodów</span> i utrzymanie <span class="font-bold">hal garażowych</span>
+                        <span class="font-bold">Pielęgnacja ogrodów</span> i utrzymanie <span class="font-bold">hal
+                            garażowych</span>
                     </span>
                 </div>
                 <div class="flex items-start gap-4 items-center">
                     <span class="text-2xl mt-1 md:text-6xl">❄️</span>
                     <span class="text-blue-900 text-xl">
-                        Profesjonalne <span class="font-bold">odśnieżanie</span> chodników, parkingów i innych przestrzeni
+                        Profesjonalne <span class="font-bold">odśnieżanie</span> chodników, parkingów i innych
+                        przestrzeni
                     </span>
                 </div>
                 <div class="flex items-start gap-4 items-center">
@@ -148,9 +253,12 @@
                 <div class="flex items-start gap-4 bg-blue-50 rounded-xl p-6 shadow-sm border border-blue-100">
                     <span class="text-3xl mt-1 flex-shrink-0">📜</span>
                     <div>
-                        <h3 class="font-bold text-blue-800 text-lg mb-1">Regularne przeglądy to Twój obowiązek i bezpieczeństwo</h3>
+                        <h3 class="font-bold text-blue-800 text-lg mb-1">Regularne przeglądy to Twój obowiązek i
+                            bezpieczeństwo</h3>
                         <p class="text-blue-900 text-base">
-                            Pamiętaj o corocznym przeglądzie technicznym instalacji i urządzeń grzewczych (zgodnie z Art. 62 Prawa budowlanego). Dotyczy to instalacji gazowych, kominów i innych urządzeń. Działaj zgodnie z przepisami i śpij spokojnie!
+                            Pamiętaj o corocznym przeglądzie technicznym instalacji i urządzeń grzewczych (zgodnie z
+                            Art. 62 Prawa budowlanego). Dotyczy to instalacji gazowych, kominów i innych urządzeń.
+                            Działaj zgodnie z przepisami i śpij spokojnie!
                         </p>
                     </div>
                 </div>
@@ -161,7 +269,9 @@
                     <div>
                         <h3 class="font-bold text-yellow-800 text-lg mb-1">Czujniki CO i dymu – Twój cichy strażnik</h3>
                         <p class="text-blue-900 text-base">
-                            W nowych budynkach montaż czujników tlenku węgla (czadu) i dymu jest obowiązkowy (do 2025 r.). To niewielka inwestycja, która chroni przed niewidocznym zagrożeniem i może uratować życie. Nie ryzykuj!
+                            W nowych budynkach montaż czujników tlenku węgla (czadu) i dymu jest obowiązkowy (do 2025
+                            r.). To niewielka inwestycja, która chroni przed niewidocznym zagrożeniem i może uratować
+                            życie. Nie ryzykuj!
                         </p>
                     </div>
                 </div>
@@ -172,7 +282,8 @@
                     <div>
                         <h3 class="font-bold text-green-800 text-lg mb-1">Sprawne kominy = Bezpieczne ogrzewanie</h3>
                         <p class="text-blue-900 text-base">
-                            Regularne przeglądy kominowe (spalinowe, dymowe, wentylacyjne) są kluczowe dla bezpieczeństwa i efektywnego działania Twoich urządzeń grzewczych. Zadbaj o to z nami!
+                            Regularne przeglądy kominowe (spalinowe, dymowe, wentylacyjne) są kluczowe dla
+                            bezpieczeństwa i efektywnego działania Twoich urządzeń grzewczych. Zadbaj o to z nami!
                         </p>
                     </div>
                 </div>
@@ -182,7 +293,9 @@
             <div class="mt-10 bg-red-50 border border-red-200 rounded-xl p-5 text-center">
                 <!-- Increased margin and padding -->
                 <p class="text-red-800 font-semibold">
-                    <span class="font-bold">Pamiętaj:</span> Tlenek węgla (czad) jest niewidoczny, bezwonny i śmiertelnie niebezpieczny. Regularny serwis i sprawny czujnik to najlepsza ochrona dla Ciebie i Twoich bliskich.
+                    <span class="font-bold">Pamiętaj:</span> Tlenek węgla (czad) jest niewidoczny, bezwonny i
+                    śmiertelnie niebezpieczny. Regularny serwis i sprawny czujnik to najlepsza ochrona dla Ciebie i
+                    Twoich bliskich.
                 </p>
             </div>
         </div>
@@ -194,14 +307,19 @@
         <!-- Adjusted gradient and padding -->
         <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-6">Potrzebujesz pomocy lub wyceny?</h2>
-            <a href="tel:++48452221328" class="inline-block text-3xl md:text-4xl font-extrabold text-blue-900 hover:text-blue-600 transition-colors duration-150 tracking-tight bg-white/80 border border-blue-100 rounded-full px-10 py-5 shadow-lg transform hover:scale-105">
+            <a href="tel:++48452221328"
+                class="inline-block text-3xl md:text-4xl font-extrabold text-blue-900 hover:text-blue-600 transition-colors duration-150 tracking-tight bg-white/80 border border-blue-100 rounded-full px-10 py-5 shadow-lg transform hover:scale-105">
                 +48 452 221 328
             </a>
-            <a class="mt-2 transition-transform duration-300 hover:scale-105 focus:scale-105 group rounded-full" href="https://www.facebook.com/people/Chochół-Serwis-Dawid-Chochół/61572947396676/?mibextid=wwXIfr" target="_blank" style="display: inline-block; padding: 10px 20px; background-color: #1877F2; color: white; text-decoration: none;">
+            <a class="mt-2 transition-transform duration-300 hover:scale-105 focus:scale-105 group rounded-full"
+                href="https://www.facebook.com/people/Chochół-Serwis-Dawid-Chochół/61572947396676/?mibextid=wwXIfr"
+                target="_blank"
+                style="display: inline-block; padding: 10px 20px; background-color: #1877F2; color: white; text-decoration: none;">
                 <strong>Odwiedź nas na Facebooku</strong>
             </a>
             <div class="mt-5 text-blue-700 text-base"> <!-- Increased font size -->
-                 E-mail: <a href="mailto:serwis.chochol@gmail.com" class="underline hover:text-blue-900">serwis.chochol@gmail.com</a>
+                E-mail: <a href="mailto:serwis.chochol@gmail.com"
+                    class="underline hover:text-blue-900">serwis.chochol@gmail.com</a>
             </div>
         </div>
     </section>
