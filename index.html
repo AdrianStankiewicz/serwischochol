@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Using Tailwind Play CDN for simplicity - replace with your build setup -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              // You can add custom theme settings here if needed
+            }
+          }
+        }
+      </script>
+    <title>Chochół Serwis - Serwis Kotłów Gazowych</title>
+</head>
+
+<body class="flex flex-col bg-gray-50"> <!-- Added a light base background -->
+
+    <!-- NAV SECTION -->
+    <nav class="w-full bg-gray-800 text-white shadow-md sticky top-0 z-50"> <!-- Made sticky -->
+        <div class="max-w-7xl mx-auto flex items-center h-20 px-4 sm:px-6 lg:px-8">
+            <!-- Logo (left) -->
+            <a href="#"
+                class="font-extrabold text-2xl md:text-3xl tracking-tight text-white drop-shadow-sm flex items-center gap-2 group transition-colors duration-200">
+                <!-- Changed text-blue-700 to white for better contrast -->
+                Chochół <span class="text-blue-400 group-hover:text-blue-300 transition-colors">Serwis</span>
+                <!-- Adjusted accent color and hover -->
+            </a>
+            <!-- Spacer -->
+            <div class="flex-1"></div>
+            <!-- Fixly Hook (right) -->
+            <a href="https://fixly.pl/profil/wpdg6wkl" target="_blank"
+                class="inline-block rounded transition-transform duration-300 hover:scale-105 focus:scale-105 group">
+                <!-- Added group for potential parent hover effects -->
+                <img alt="Polecają mnie na Fixly" width="178" src="https://fixly.pl/profil/wpdg6wkl/widget-a01-2x.png"
+                    class="rounded transition-shadow duration-300 group-hover:shadow-lg" style="border: 0 none;">
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="w-full bg-gradient-to-br from-blue-50 via-white to-blue-100 py-16 md:py-20">
+        <!-- Increased padding -->
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-blue-900 mb-5 tracking-tight">
+                <!-- Slightly larger on lg screens -->
+                Serwis kotłów gazowych<br>
+                <span class="bg-gradient-to-r from-blue-600 to-green-400 bg-clip-text text-transparent">szybko, bezpiecznie, profesjonalnie</span>
+            </h1>
+            <p class="text-lg md:text-xl text-blue-800 mb-10 max-w-3xl mx-auto">
+                <!-- Constrained paragraph width -->
+                Zadbaj o sprawność i bezpieczeństwo swojego ogrzewania.
+                Umów serwis z certyfikowanym specjalistą w kilka chwil.
+            </p>
+            <a href="tel:123456789" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-10 rounded-full shadow-lg text-xl md:text-2xl transition transform hover:scale-105">
+                <!-- Adjusted text size, added transform -->
+                Zadzwoń i umów wizytę
+            </a>
+            <div class="mt-5 text-blue-500 text-sm">Dostępni 7 dni w tygodniu</div>
+        </div>
+    </section>
+
+
+    <!-- BRANDS & SERVICES -->
+    <section class="w-full bg-white py-16 md:py-20">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Increased max-width -->
+            <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-10 text-center">Obsługiwane marki i zakres usług</h2>
+            <!-- Larger heading, more bottom margin -->
+            <div class="flex flex-wrap justify-center items-center gap-x-10 md:gap-x-16 gap-y-6 mb-12">
+                <!-- Increased gap on desktop, more bottom margin -->
+                <img src="resources/images/Bosch-logo.png" alt="Bosch logo" class="h-10 md:h-12 object-contain" /> <!-- Removed fixed width, adjusted height -->
+                <img src="resources/images/Buderus-logo.png" alt="Buderus logo" class="h-10 md:h-12 object-contain" />
+                <img src="resources/images/Beretta-logo.png" alt="Beretta logo" class="h-10 md:h-12 object-contain" />
+                <img src="resources/images/Junkers-logo.png" alt="Junkers logo" class="h-10 md:h-12 object-contain" />
+                <img src="resources/images/Saunier_Duval-logo.png" alt="Saunier Duval logo" class="h-10 md:h-12 object-contain" />
+                <img src="resources/images/Viessmann-logo.png" alt="Viessmann logo" class="h-10 md:h-12 object-contain" />
+                <img src="resources/images/Termet-logo.png" alt="Termet logo" class="h-10 md:h-12 object-contain" />
+            </div>
+
+            <!-- *** Changed this section to a grid on desktop *** -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-6 mb-10">
+                <!-- Grid layout for services on medium screens and up -->
+                <div class="flex items-start md:items-center gap-3 p-4 rounded-lg bg-gray-50/50"> <!-- Centered items on desktop -->
+                  <span class="text-2xl mt-1 md:mt-0 md:text-6xl">🤝</span>
+                  <span class="text-blue-900 text-base md:text-xl"> <!-- Adjusted text size -->
+                    Współpraca z <span class="font-bold">autoryzowanymi serwisami</span>
+                  </span>
+                </div>
+                <div class="flex items-start md:items-center gap-3 p-4 rounded-lg bg-gray-50/50">
+                  <span class="text-2xl mt-1 md:mt-0 md:text-6xl">💡</span>
+                  <span class="text-blue-900 text-base md:text-xl">
+                    Audyty energetyczne <br class="hidden md:inline"> dla <span class="font-bold">optymalizacji zużycia</span>
+                  </span>
+                </div>
+                <div class="flex items-start md:items-center gap-3 p-4 rounded-lg bg-gray-50/50">
+                  <span class="text-2xl mt-1 md:mt-0 md:text-6xl">💰</span>
+                  <span class="text-blue-900 text-base md:text-xl">
+                    <span class="font-bold">Bezpłatna wycena</span> montażu i dobór <span class="font-bold">optymalnych rozwiązań</span>
+                  </span>
+                </div>
+            </div>
+            
+            <div class="text-blue-700 text-sm text-center border-t pt-6 mt-6"> <!-- Added separator -->
+                Współpracujemy z <span class="font-semibold">Centrum Serwisowym Pyzik</span> - polecamy ich usługi.<br>
+                Kontakt: <a href="tel:517623833" class="underline hover:text-blue-900">517 623 833</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMMUNITY SERVICES -->
+    <section class="w-full bg-blue-50 py-16 md:py-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-10 text-center">Obsługa wspólnot mieszkaniowych</h2>
+
+            <div class="space-y-6 max-w-2xl mx-auto"> <!-- Increased spacing -->
+                <div class="flex items-start gap-4 items-center"> <!-- Increased gap -->
+                    <span class="text-2xl mt-1 md:text-6xl">🧹</span>
+                    <span class="text-blue-900 text-xl">
+                        <span class="font-bold">Utrzymanie czystości</span> w częściach wspólnych budynków (klatki schodowe, korytarze, parkingi)
+                    </span>
+                </div>
+                <div class="flex items-start gap-4 items-center">
+                    <span class="text-2xl mt-1 md:text-6xl">🌳</span>
+                    <span class="text-blue-900 text-xl">
+                        <span class="font-bold">Pielęgnacja ogrodów</span> i utrzymanie <span class="font-bold">hal garażowych</span>
+                    </span>
+                </div>
+                <div class="flex items-start gap-4 items-center">
+                    <span class="text-2xl mt-1 md:text-6xl">❄️</span>
+                    <span class="text-blue-900 text-xl">
+                        Profesjonalne <span class="font-bold">odśnieżanie</span> chodników, parkingów i innych przestrzeni
+                    </span>
+                </div>
+                <div class="flex items-start gap-4 items-center">
+                    <span class="text-2xl mt-1 md:text-6xl">⚙️</span>
+                    <span class="text-blue-900 text-xl">
+                        Rozwiązania dostosowane do <span class="font-bold">indywidualnych potrzeb</span> wspólnoty
+                    </span>
+                </div>
+                <div class="flex items-start gap-4 items-center">
+                    <span class="text-2xl mt-1 md:text-6xl">⭐</span>
+                    <span class="text-blue-900 text-2xl">
+                        Nacisk na <span class="font-bold">jakość i terminowość</span> usług
+                    </span>
+                </div>
+            </div>
+
+            <div class="text-blue-700 text-base text-center mt-10"> <!-- Increased font size and margin -->
+                Działamy w: Gdynia, Sopot, Gdańsk, Rumia, Reda, Wejherowo, Puck i okolice.
+            </div>
+        </div>
+    </section>
+
+
+    <!-- YOUR SAFETY IS OUR PRIORITY -->
+    <section class="w-full bg-white py-16 md:py-20">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-blue-900 mb-10 text-center">
+                Bezpieczny dom to spokojna głowa – zadbaj o przeglądy!
+            </h2>
+
+            <div class="space-y-6"> <!-- Increased spacing -->
+                <!-- Legal Compliance Card -->
+                <div class="flex items-start gap-4 bg-blue-50 rounded-xl p-6 shadow-sm border border-blue-100">
+                    <!-- Increased padding -->
+                    <span class="text-3xl mt-1 flex-shrink-0">📜</span>
+                    <div>
+                        <h3 class="font-bold text-blue-800 text-lg mb-1">Regularne przeglądy to Twój obowiązek i bezpieczeństwo</h3>
+                        <p class="text-blue-900 text-base">
+                            Pamiętaj o corocznym przeglądzie technicznym instalacji i urządzeń grzewczych (zgodnie z Art. 62 Prawa budowlanego). Dotyczy to instalacji gazowych, kominów i innych urządzeń. Działaj zgodnie z przepisami i śpij spokojnie!
+                        </p>
+                    </div>
+                </div>
+
+                <!-- CO & Smoke Detector Card -->
+                <div class="flex items-start gap-4 bg-yellow-50 rounded-xl p-6 shadow-sm border border-yellow-200">
+                    <span class="text-3xl mt-1 flex-shrink-0">🚨</span>
+                    <div>
+                        <h3 class="font-bold text-yellow-800 text-lg mb-1">Czujniki CO i dymu – Twój cichy strażnik</h3>
+                        <p class="text-blue-900 text-base">
+                            W nowych budynkach montaż czujników tlenku węgla (czadu) i dymu jest obowiązkowy (do 2025 r.). To niewielka inwestycja, która chroni przed niewidocznym zagrożeniem i może uratować życie. Nie ryzykuj!
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Chimney Check Card -->
+                <div class="flex items-start gap-4 bg-green-50 rounded-xl p-6 shadow-sm border border-green-100">
+                    <span class="text-3xl mt-1 flex-shrink-0">✅</span>
+                    <div>
+                        <h3 class="font-bold text-green-800 text-lg mb-1">Sprawne kominy = Bezpieczne ogrzewanie</h3>
+                        <p class="text-blue-900 text-base">
+                            Regularne przeglądy kominowe (spalinowe, dymowe, wentylacyjne) są kluczowe dla bezpieczeństwa i efektywnego działania Twoich urządzeń grzewczych. Zadbaj o to z nami!
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Final Important Note -->
+            <div class="mt-10 bg-red-50 border border-red-200 rounded-xl p-5 text-center">
+                <!-- Increased margin and padding -->
+                <p class="text-red-800 font-semibold">
+                    <span class="font-bold">Pamiętaj:</span> Tlenek węgla (czad) jest niewidoczny, bezwonny i śmiertelnie niebezpieczny. Regularny serwis i sprawny czujnik to najlepsza ochrona dla Ciebie i Twoich bliskich.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CTA SECTION -->
+    <section class="w-full bg-gradient-to-br from-blue-100 via-white to-blue-200 py-16 md:py-20">
+        <!-- Adjusted gradient and padding -->
+        <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-6">Potrzebujesz pomocy lub wyceny?</h2>
+            <a href="tel:+48452221328" class="inline-block text-3xl md:text-4xl font-extrabold text-blue-900 hover:text-blue-600 transition-colors duration-150 tracking-tight bg-white/80 border border-blue-100 rounded-full px-10 py-5 shadow-lg transform hover:scale-105">
+                <!-- Increased padding and size -->
+                +48 452 221 328
+            </a>
+            <a class="mt-2 transition-transform duration-300 hover:scale-105 focus:scale-105 group rounded-full" href="https://www.facebook.com/people/Chochół-Serwis-Dawid-Chochół/61572947396676/?mibextid=wwXIfr" target="_blank" style="display: inline-block; padding: 10px 20px; background-color: #1877F2; color: white; text-decoration: none;">
+                <strong>Odwiedź nas na Facebooku</strong>
+            </a>
+            <div class="mt-5 text-blue-700 text-base"> <!-- Increased font size -->
+                 E-mail: <a href="mailto:serwis.chochol@gmail.com" class="underline hover:text-blue-900">serwis.chochol@gmail.com</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="w-full bg-gray-800 text-gray-400 py-6 text-center text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            © 2025 Chochół Serwis. Wszelkie prawa zastrzeżone. | NIP: 9581745739
+            <!-- Add privacy policy link etc. if needed -->
+        </div>
+    </footer>
+
+</body>
+
+</html>
