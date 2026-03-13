@@ -8,20 +8,23 @@
     <title>Chochół Serwis - Serwis Kotłów i Pieców Gazowych Gdynia i Trójmiasto</title>
     <meta name="description"
         content="Profesjonalny pogwarancyjny serwis i naprawa kotłów i pieców gazowych (Bosch, Buderus, Junkers, Viessmann, Beretta, Saunier Duval, Termet) w Gdyni, Trójmieście i okolicach. Obsługa wspólnot.">
-    <!-- Canonical URL - Crucial for avoiding duplicate content -->
     <link rel="canonical" href="https://serwischochol.pl/">
 
-    <!-- ===== Open Graph / Social Media Meta Tags ===== -->
     <meta property="og:title" content="Chochół Serwis - Serwis Kotłów i Pieców Gazowych Gdynia i Trójmiasto">
     <meta property="og:description"
         content="Profesjonalny pogwarancyjny serwis i naprawa kotłów i pieców gazowych (Bosch, Buderus, Junkers, Viessmann i inne) w Gdyni, Trójmieście i okolicach.">
-    <meta property="og:image" content="https://serwischochol.pl/resources/images/chochol_serwis.png">
-
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <meta property="og:image" content="https://serwischochol.pl/resources/chochol_serwis.png">
 
     <meta name="keywords" content="serwis, naprawa, montaż, pieców, kotłów, urządzeń grzewczych, kotły gazowe, piece gazowe, grzejniki, komin, grzanie, ciepło, urządzenia grzewcze, Gdynia, Gdańsk, Sopot, Reda, Rumia, Wejherowo, Puck, Bosch, Buderus, Viessman, Beterra, Junkers, Panasonic, York, Saunier Duval, Termet, obsługa wspólnot mieszkaniowych, odśnieżanie, utrzymanie czystości, Chochół Serwis, Dawid Chochół">
 
-    <!-- ===== Schema.org Markup (JSON-LD) ===== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="stylesheet" href="style.css">
+
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -29,8 +32,8 @@
       "name": "Chochół Serwis",
       "@id": "https://serwischochol.pl/",
       "url": "https://serwischochol.pl/",
-      "logo": "https://serwischochol.pl/resources/images/chochol_serwis.png",
-      "description": "Profesjonalny pogwarancyjny serwis i naprawa kotłów i pieców gazowych (Bosch, Buderus, Junkers, Viessmann, Beretta, Saunier Duval, Termet) w Gdyni, Trójmieście i okolicach. Oferujemy również obsługę wspólnot mieszkaniowych.",
+      "logo": "https://serwischochol.pl/resources/chochol_serwis.png",
+      "description": "Profesjonalny pogwarancyjny serwis i naprawa kotłów i pieców gazowych (Bosch, Buderus, Junkers, Viessmann, Beretta, Saunier Duval, Termet) w Gdyni, Trójmieście i okolicach.",
       "telephone": "+48452221328",
       "address": {
         "@type": "PostalAddress",
@@ -43,7 +46,6 @@
         "latitude": "54.5189",
         "longitude": "18.5305"
       },
-      // Define opening hours clearly
       "openingHoursSpecification": [
         {
           "@type": "OpeningHoursSpecification",
@@ -51,9 +53,9 @@
             "https://schema.org/Monday",
             "https://schema.org/Tuesday",
             "https://schema.org/Wednesday",
-            "https://schema.org/Thursday"
-            "https://schema.org/Friday"
-            "https://schema.org/Saturday"
+            "https://schema.org/Thursday",
+            "https://schema.org/Friday",
+            "https://schema.org/Saturday",
             "https://schema.org/Sunday"
           ],
           "opens": "08:00",
@@ -61,279 +63,624 @@
         }
       ],
       "areaServed": [
-        {
-          "@type": "City",
-          "name": "Gdynia"
-        },
-        {
-          "@type": "City",
-          "name": "Sopot"
-        },
-        {
-          "@type": "City",
-          "name": "Gdańsk"
-        },
-        {
-          "@type": "City",
-          "name": "Rumia"
-        },
-        {
-          "@type": "City",
-          "name": "Reda"
-        },
-        {
-          "@type": "City",
-          "name": "Wejherowo"
-        },
-        {
-          "@type": "City",
-          "name": "Puck"
-        },
-        {
-            "@type": "AdministrativeArea", // Broader area
-            "name": "Trójmiasto i okolice"
-        }
+        {"@type": "City", "name": "Gdynia"},
+        {"@type": "City", "name": "Sopot"},
+        {"@type": "City", "name": "Gdańsk"},
+        {"@type": "City", "name": "Rumia"},
+        {"@type": "City", "name": "Reda"},
+        {"@type": "City", "name": "Wejherowo"},
+        {"@type": "City", "name": "Puck"},
+        {"@type": "AdministrativeArea", "name": "Trójmiasto i okolice"}
       ],
       "sameAs": [
-        "https://fixly.pl/profil/wpdg6wkl"
+        "https://fixly.pl/profil/wpdg6wkl",
         "https://www.facebook.com/people/Chochół-Serwis-Dawid-Chochół/61572947396676/?mibextid=wwXIfr"
       ]
     }
     </script>
-
 </head>
 
-<body class="flex flex-col bg-gray-50"> <!-- Added a light base background -->
+<body class="bg-white text-gray-900 antialiased">
 
-    <!-- NAV SECTION -->
-    <nav class="w-full bg-gray-800 text-white shadow-md sticky top-0 z-50"> <!-- Made sticky -->
-        <div class="max-w-7xl mx-auto flex items-center h-20 px-4 sm:px-6 lg:px-8">
-            <a href="#"
-                class="font-extrabold text-2xl md:text-3xl tracking-tight text-white drop-shadow-sm flex items-center gap-2 group transition-colors duration-200">
-                Chochół <span class="text-blue-400 group-hover:text-blue-300 transition-colors">Serwis</span>
+    <!-- MOBILE FLOATING CTA -->
+    <div class="mobile-cta fixed bottom-0 left-0 right-0 z-50 p-3 items-center gap-2"
+         style="background: rgba(15,23,42,0.97); backdrop-filter: blur(12px); border-top: 1px solid rgba(255,255,255,0.08);">
+        <a href="tel:+48452221328"
+           class="orange-btn text-white font-bold py-3.5 rounded-xl flex items-center justify-center gap-2.5 text-base w-full">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/>
+            </svg>
+            Zadzwoń: +48 452 221 328
+        </a>
+    </div>
+
+    <!-- NAV -->
+    <nav class="w-full bg-slate-900 text-white sticky top-0 z-40 border-b border-slate-700/60">
+        <div class="max-w-7xl mx-auto flex items-center justify-between h-16 px-4 sm:px-6 lg:px-8">
+            <a href="#" class="flex items-center gap-3 group">
+                <img src="resources/chochol_serwis.png" alt="Chochół Serwis" class="h-9 w-9 rounded-lg object-cover">
+                <span class="font-bold text-lg tracking-tight">
+                    Chochół <span class="text-orange-400">Serwis</span>
+                </span>
             </a>
-            <div class="flex-1"></div>
-            <a href="https://fixly.pl/profil/wpdg6wkl" target="_blank"
-                class="inline-block rounded transition-transform duration-300 hover:scale-105 focus:scale-105 group">
-                <img alt="Polecają mnie na Fixly" width="178" src="https://fixly.pl/profil/wpdg6wkl/widget-a01-2x.png"
-                    class="rounded transition-shadow duration-300 group-hover:shadow-lg" style="border: 0 none;">
-            </a>
+
+            <div class="flex items-center gap-4">
+                <a href="tel:+48452221328" class="hidden sm:flex items-center gap-2 text-slate-300 hover:text-white transition-colors text-sm font-medium">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-orange-400" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/>
+                    </svg>
+                    +48 452 221 328
+                </a>
+                <a href="https://fixly.pl/profil/wpdg6wkl" target="_blank"
+                    class="inline-block rounded transition-transform duration-200 hover:scale-105">
+                    <img alt="Polecają mnie na Fixly" width="140" src="https://fixly.pl/profil/wpdg6wkl/widget-a01-2x.png"
+                        class="rounded" style="border: 0 none;">
+                </a>
+            </div>
         </div>
     </nav>
 
-    <!-- HERO SECTION -->
-    <section class="w-full bg-gradient-to-br from-blue-50 via-white to-blue-100 py-12 md:py-20">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-blue-900 mb-5 tracking-tight">
-                Serwis urządzeń grzewczych<br>
-                <span class="bg-gradient-to-r from-blue-600 to-green-400 bg-clip-text text-transparent">szybko,
-                    bezpiecznie, profesjonalnie</span>
-            </h1>
-            <p class="text-lg md:text-xl text-blue-800 mb-10 max-w-3xl mx-auto">
-                Zadbaj o sprawność i bezpieczeństwo swojego ogrzewania.
-                Umów serwis ze sprawdzonym specjalistą w kilka chwil.
-            </p>
-            <a href="tel:+48452221328"
-                class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-10 rounded-full shadow-lg text-xl md:text-2xl transition transform hover:scale-105">
-                Zadzwoń i umów wizytę
-            </a>
-            <div class="mt-5 text-blue-500 text-sm">Działamy w: Gdynia, Sopot, Gdańsk, Rumia, Reda, Wejherowo, Puck i
-                okolice.<br>Dostępni 7 dni w tygodniu</div>
+    <!-- HERO -->
+    <section class="text-white relative overflow-hidden" style="background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 60%, #1d4ed8 100%); background-image: linear-gradient(135deg, #0f172a 0%, #1e3a8a 60%, #1d4ed8 100%), radial-gradient(circle, rgba(255,255,255,0.07) 1px, transparent 1px); background-size: cover, 28px 28px;">
+        <!-- Ambient glow blobs -->
+        <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
+            <div style="position:absolute;top:-10%;left:-5%;width:500px;height:500px;background:radial-gradient(circle,rgba(249,115,22,0.18) 0%,transparent 70%);"></div>
+            <div style="position:absolute;bottom:-15%;right:-5%;width:600px;height:600px;background:radial-gradient(circle,rgba(59,130,246,0.15) 0%,transparent 70%);"></div>
+        </div>
+
+        <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+            <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+
+                <!-- Left: text -->
+                <div class="flex-1 text-center lg:text-left">
+                    <div class="flex flex-wrap justify-center lg:justify-start gap-2 mb-6 anim">
+                        <span class="inline-flex items-center gap-2 bg-orange-500/15 border border-orange-400/25 rounded-full px-4 py-1.5 text-orange-300 text-sm font-medium">
+                            <span class="w-2 h-2 rounded-full bg-green-400 inline-block animate-pulse"></span>
+                            Dostępni 7 dni w tygodniu
+                        </span>
+                        <span class="inline-flex items-center gap-1.5 bg-green-500/15 border border-green-400/25 rounded-full px-4 py-1.5 text-green-300 text-sm font-medium">
+                            <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/></svg>
+                            Zwykle odpowiadamy w ciągu 1h
+                        </span>
+                    </div>
+
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-5 leading-tight tracking-tight anim anim-delay-1">
+                        Serwis kotłów<br class="hidden sm:block"> i pieców gazowych<br>
+                        <span style="background-image: linear-gradient(90deg, #fb923c, #fbbf24); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">z gwarancją jakości</span>
+                    </h1>
+
+                    <p class="text-lg md:text-xl text-slate-300 mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed anim anim-delay-2">
+                        Pogwarancyjny serwis, naprawy i przeglądy urządzeń grzewczych.
+                        Szybka reakcja, rzetelna wycena, sprawdzony specjalista.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 mb-8 anim anim-delay-3">
+                        <a href="tel:+48452221328"
+                            class="orange-btn text-white font-bold py-4 px-7 rounded-xl text-lg shadow-xl flex items-center gap-2.5 w-full sm:w-auto justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/>
+                            </svg>
+                            Zadzwoń teraz
+                        </a>
+                        <a href="mailto:serwis.chochol@gmail.com"
+                            class="border border-slate-500/70 hover:border-slate-300 text-slate-200 hover:text-white font-semibold py-4 px-7 rounded-xl text-lg transition-all w-full sm:w-auto justify-center flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                            </svg>
+                            Napisz e-mail
+                        </a>
+                    </div>
+
+                    <div class="flex flex-wrap justify-center lg:justify-start gap-x-6 gap-y-2.5 text-slate-400 text-sm anim anim-delay-4">
+                        <span class="flex items-center gap-1.5">
+                            <svg class="w-3.5 h-3.5 text-green-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                            Gdynia · Gdańsk · Sopot
+                        </span>
+                        <span class="flex items-center gap-1.5">
+                            <svg class="w-3.5 h-3.5 text-green-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                            Rumia · Reda · Wejherowo · Puck
+                        </span>
+                        <span class="flex items-center gap-1.5">
+                            <svg class="w-3.5 h-3.5 text-green-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                            Bezpłatna wycena
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Right: logo image -->
+                <div class="flex-shrink-0 anim anim-delay-2">
+                    <div class="relative">
+                        <div class="absolute inset-0 rounded-3xl blur-2xl opacity-40" style="background: linear-gradient(135deg,#f97316,#3b82f6); transform: scale(1.1);"></div>
+                        <img src="resources/chochol_serwis.png"
+                             alt="Chochół Serwis – logo firmy"
+                             class="relative w-52 h-52 lg:w-64 lg:h-64 rounded-3xl object-cover shadow-2xl border border-white/10">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Wave: hero → trust bar -->
+    <div aria-hidden="true" style="line-height:0; background:linear-gradient(135deg,#0f172a 0%,#1e3a8a 60%,#1d4ed8 100%);">
+        <svg viewBox="0 0 1440 60" preserveAspectRatio="none" style="width:100%;height:48px;display:block;fill:#1e293b;">
+            <path d="M0,30 C240,60 480,0 720,30 C960,60 1200,0 1440,30 L1440,60 L0,60 Z"/>
+        </svg>
+    </div>
+
+    <!-- TRUST BAR -->
+    <section class="bg-slate-800">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-7">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div class="anim">
+                    <div class="text-2xl font-extrabold text-orange-400">7 dni</div>
+                    <div class="text-slate-400 text-sm mt-0.5">w tygodniu</div>
+                </div>
+                <div class="anim anim-delay-1">
+                    <div class="text-2xl font-extrabold text-orange-400">9+</div>
+                    <div class="text-slate-400 text-sm mt-0.5">obsługiwanych marek</div>
+                </div>
+                <div class="anim anim-delay-2">
+                    <div class="text-2xl font-extrabold text-orange-400">Trójmiasto</div>
+                    <div class="text-slate-400 text-sm mt-0.5">i okolice</div>
+                </div>
+                <div class="anim anim-delay-3">
+                    <div class="text-2xl font-extrabold text-orange-400">Fixly</div>
+                    <div class="text-slate-400 text-sm mt-0.5">polecany specjalista</div>
+                </div>
+            </div>
         </div>
     </section>
 
+    <!-- Wave: trust bar → white -->
+    <div aria-hidden="true" style="line-height:0; background:#1e293b;">
+        <svg viewBox="0 0 1440 60" preserveAspectRatio="none" style="width:100%;height:48px;display:block;fill:#ffffff;">
+            <path d="M0,0 C360,60 1080,0 1440,40 L1440,60 L0,60 Z"/>
+        </svg>
+    </div>
 
-    <!-- BRANDS & SERVICES -->
-    <section class="w-full bg-white py-12 md:py-20">
+    <!-- WHY US -->
+    <section class="w-full bg-white pt-4 pb-0">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
+                <div class="p-6 rounded-2xl anim">
+                    <div class="w-14 h-14 rounded-2xl mx-auto mb-4 flex items-center justify-center" style="background: linear-gradient(135deg,#fff7ed,#fed7aa);">
+                        <svg class="w-7 h-7 text-orange-500" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-slate-900 text-lg mb-1">Szybka reakcja</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">Przyjeżdżamy do Ciebie możliwie najszybciej. Bez zbędnego czekania na terminy.</p>
+                </div>
+                <div class="p-6 rounded-2xl anim anim-delay-1">
+                    <div class="w-14 h-14 rounded-2xl mx-auto mb-4 flex items-center justify-center" style="background: linear-gradient(135deg,#eff6ff,#bfdbfe);">
+                        <svg class="w-7 h-7 text-blue-500" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-slate-900 text-lg mb-1">Rzetelna wycena</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">Transparentne ceny, bez niespodzianek. Bezpłatna wycena montażu i dobór optymalnych rozwiązań.</p>
+                </div>
+                <div class="p-6 rounded-2xl anim anim-delay-2">
+                    <div class="w-14 h-14 rounded-2xl mx-auto mb-4 flex items-center justify-center" style="background: linear-gradient(135deg,#f0fdf4,#bbf7d0);">
+                        <svg class="w-7 h-7 text-green-500" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-slate-900 text-lg mb-1">Sprawdzony specjalista</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">Polecany na Fixly. Doświadczenie przy wszystkich głównych markach urządzeń grzewczych.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="w-full bg-white py-10 md:py-16">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10 anim">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 mb-3">Zakres usług</h2>
+                <p class="text-slate-500 text-lg max-w-xl mx-auto">Kompleksowa obsługa urządzeń grzewczych – od przeglądu po montaż.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+
+                <!-- Serwis i naprawa – klucz + ogień -->
+                <div class="card-hover bg-white rounded-2xl p-6 border border-gray-100 shadow-sm anim">
+                    <div class="w-12 h-12 rounded-xl bg-orange-100 flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-extrabold text-slate-900 text-lg mb-1.5">Serwis i naprawa</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">Pogwarancyjny serwis kotłów i pieców gazowych wszystkich wiodących marek.</p>
+                </div>
+
+                <!-- Przeglądy techniczne – lupa/inspekcja -->
+                <div class="card-hover bg-white rounded-2xl p-6 border border-gray-100 shadow-sm anim anim-delay-1">
+                    <div class="w-12 h-12 rounded-xl bg-blue-100 flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-extrabold text-slate-900 text-lg mb-1.5">Przeglądy techniczne</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">Coroczne przeglądy instalacji gazowych i kominowych zgodnie z Art. 62 Prawa budowlanego.</p>
+                </div>
+
+                <!-- Klimatyzacja – wiatr/śnieżynka -->
+                <div class="card-hover bg-white rounded-2xl p-6 border border-gray-100 shadow-sm anim anim-delay-2">
+                    <div class="w-12 h-12 rounded-xl bg-cyan-100 flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-cyan-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-extrabold text-slate-900 text-lg mb-1.5">Klimatyzacja</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">Montaż, sprzedaż i serwis klimatyzacji. Dobór optymalnego rozwiązania dla Twojego domu.</p>
+                </div>
+
+                <!-- Bezpłatna wycena – metka/cennik -->
+                <div class="card-hover bg-white rounded-2xl p-6 border border-gray-100 shadow-sm anim anim-delay-1">
+                    <div class="w-12 h-12 rounded-xl bg-green-100 flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-green-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A2 2 0 013 12V7a4 4 0 014-4z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-extrabold text-slate-900 text-lg mb-1.5">Bezpłatna wycena</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">Wycena montażu i dobór rozwiązań bez żadnych ukrytych kosztów. Rzetelna i transparentna oferta.</p>
+                </div>
+
+                <!-- Serwisy autoryzowane – tarcza z checkmarkiem -->
+                <div class="card-hover bg-white rounded-2xl p-6 border border-gray-100 shadow-sm anim anim-delay-2">
+                    <div class="w-12 h-12 rounded-xl bg-purple-100 flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-purple-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-extrabold text-slate-900 text-lg mb-1.5">Serwisy autoryzowane</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">Współpraca z autoryzowanymi serwisami – w razie potrzeby kierujemy do odpowiednich specjalistów.</p>
+                </div>
+
+                <!-- Obsługa wspólnot – budynek mieszkalny -->
+                <div class="card-hover bg-white rounded-2xl p-6 border border-gray-100 shadow-sm anim anim-delay-3">
+                    <div class="w-12 h-12 rounded-xl bg-rose-100 flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-rose-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-extrabold text-slate-900 text-lg mb-1.5">Obsługa wspólnot</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">Kompleksowa obsługa wspólnot mieszkaniowych: sprzątanie, odśnieżanie, pielęgnacja terenów.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- BRANDS -->
+    <section class="w-full bg-gray-50 py-10 md:py-14 border-y border-gray-100">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-10 text-center">Obsługiwane marki i zakres usług
-            </h2>
-            <div class="flex flex-wrap justify-center items-center gap-x-10 md:gap-x-16 gap-y-6 mb-12">
-                <img src="resources/images/Bosch-logo.png" alt="Bosch logo" class="h-6 md:h-12 object-contain" />
-                <!-- Removed fixed width, adjusted height -->
-                <img src="resources/images/Buderus-logo-new.jpeg" alt="Buderus logo"
-                    class="h-6 md:h-12 object-contain" />
-                <img src="resources/images/Beretta-logo.png" alt="Beretta logo" class="h-6 md:h-12 object-contain" />
-                <img src="resources/images/Junkers-logo.png" alt="Junkers logo" class="h-6 md:h-12 object-contain" />
-                <img src="resources/images/Saunier_Duval-logo.png" alt="Saunier Duval logo"
-                    class="h-6 md:h-12 object-contain" />
-                <img src="resources/images/Viessmann-logo.png" alt="Viessmann logo"
-                    class="h-6 md:h-12 object-contain" />
-                <img src="resources/images/Termet-logo.png" alt="Termet logo" class="h-6 md:h-12 object-contain" />
-                <img src="resources/images/Panasonic-logo.png" alt="Panasonic logo"
-                    class="h-6 md:h-12 object-contain" />
-                <img src="resources/images/York-logo.png" alt="York logo" class="h-6 md:h-12 object-contain" />
+            <p class="text-center text-slate-400 text-xs font-semibold uppercase tracking-widest mb-8 anim">Obsługiwane marki</p>
+            <div class="flex flex-wrap justify-center items-center gap-x-10 md:gap-x-14 gap-y-6">
+                <img src="resources/images/Bosch-logo.png" alt="Bosch" class="brand-img h-7 md:h-9 object-contain anim" />
+                <img src="resources/images/Buderus-logo-new.jpeg" alt="Buderus" class="brand-img h-7 md:h-9 object-contain anim anim-delay-1" />
+                <img src="resources/images/Beretta-logo.png" alt="Beretta" class="brand-img h-7 md:h-9 object-contain anim anim-delay-1" />
+                <img src="resources/images/Junkers-logo.png" alt="Junkers" class="brand-img h-7 md:h-9 object-contain anim anim-delay-2" />
+                <img src="resources/images/Saunier_Duval-logo.png" alt="Saunier Duval" class="brand-img h-7 md:h-9 object-contain anim anim-delay-2" />
+                <img src="resources/images/Viessmann-logo.png" alt="Viessmann" class="brand-img h-7 md:h-9 object-contain anim anim-delay-3" />
+                <img src="resources/images/Termet-logo.png" alt="Termet" class="brand-img h-7 md:h-9 object-contain anim anim-delay-3" />
+                <img src="resources/images/Panasonic-logo.png" alt="Panasonic" class="brand-img h-7 md:h-9 object-contain anim anim-delay-4" />
+                <img src="resources/images/York-logo.png" alt="York" class="brand-img h-7 md:h-9 object-contain anim anim-delay-4" />
             </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-6 mb-10">
-                <!-- Grid layout for services on medium screens and up -->
-                <div class="flex items-start md:items-center gap-3 p-4 rounded-lg bg-gray-50/50">
-                    <span class="text-2xl mt-1 md:mt-0 md:text-6xl">🤝</span>
-                    <span class="text-blue-900 text-base md:text-xl">
-                        Współpraca z <span class="font-bold">autoryzowanymi serwisami</span>
-                    </span>
-                </div>
-                <div class="flex items-start md:items-center gap-3 p-4 rounded-lg bg-gray-50/50">
-                    <span class="text-2xl mt-1 md:mt-0 md:text-6xl">❄️</span> <!-- Changed icon to snowflake, adjusted md size -->
-                    <span class="text-blue-900 text-base md:text-xl">
-                        Montaż, sprzedaż i serwis <span class="font-bold">klimatyzacji</span>
-                    </span>
-                </div>
-                <div class="flex items-start md:items-center gap-3 p-4 rounded-lg bg-gray-50/50">
-                    <span class="text-2xl mt-1 md:mt-0 md:text-6xl">💰</span>
-                    <span class="text-blue-900 text-base md:text-xl">
-                        <span class="font-bold">Bezpłatna wycena</span> montażu i dobór <span
-                            class="font-bold">optymalnych rozwiązań</span>
-                    </span>
-                </div>
-            </div>
-
-            <div class="text-blue-700 text-sm text-center border-t pt-6 mt-6">
-                Współpracujemy z <span class="font-semibold">Centrum Serwisowym Pyzik</span> - polecamy ich usługi.<br>
-                Kontakt: <a href="tel:517623833" class="underline hover:text-blue-900">517 623 833</a>
-            </div>
+            <p class="text-center text-slate-400 text-xs mt-6">oraz wiele innych</p>
         </div>
     </section>
 
     <!-- COMMUNITY SERVICES -->
-    <section class="w-full bg-blue-50 py-16 md:py-20">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-10 text-center">Obsługa wspólnot mieszkaniowych
-            </h2>
+    <section class="w-full bg-white py-14 md:py-20">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10 anim">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 mb-3">Obsługa wspólnot mieszkaniowych</h2>
+                <p class="text-slate-500 text-lg max-w-xl mx-auto">Kompleksowe utrzymanie nieruchomości – bezpiecznie i rzetelnie.</p>
+            </div>
 
-            <div class="space-y-6 max-w-2xl mx-auto">
-                <div class="flex items-start gap-4 items-center">
-                    <span class="text-2xl mt-1 md:text-6xl">🧹</span>
-                    <span class="text-blue-900 text-xl">
-                        <span class="font-bold">Utrzymanie czystości</span> w częściach wspólnych budynków (klatki
-                        schodowe, korytarze, parkingi)
-                    </span>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-3xl mx-auto">
+                <div class="flex gap-4 p-5 rounded-2xl bg-slate-50 border border-slate-100 anim">
+                    <div class="w-10 h-10 rounded-xl bg-blue-100 flex items-center justify-center flex-shrink-0">
+                        <svg class="w-5 h-5 text-blue-600" fill="currentColor" viewBox="0 0 24 24"><path d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"/></svg>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-slate-800 mb-1">Utrzymanie czystości</h3>
+                        <p class="text-slate-500 text-sm">Klatki schodowe, korytarze, parkingi i inne części wspólne.</p>
+                    </div>
                 </div>
-                <div class="flex items-start gap-4 items-center">
-                    <span class="text-2xl mt-1 md:text-6xl">🌳</span>
-                    <span class="text-blue-900 text-xl">
-                        <span class="font-bold">Pielęgnacja ogrodów</span> i utrzymanie <span class="font-bold">hal
-                            garażowych</span>
-                    </span>
+
+                <div class="flex gap-4 p-5 rounded-2xl bg-slate-50 border border-slate-100 anim anim-delay-1">
+                    <div class="w-10 h-10 rounded-xl bg-green-100 flex items-center justify-center flex-shrink-0">
+                        <svg class="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 24 24"><path d="M17 8C8 10 5.9 16.17 3.82 21.34L5.71 22l1-2.3A4.49 4.49 0 008 20C19 20 22 3 22 3c-1 2-8 2-8 2s1-2 4-3c-5.26 0-9.12 2.5-10 8z"/></svg>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-slate-800 mb-1">Pielęgnacja ogrodów</h3>
+                        <p class="text-slate-500 text-sm">Tereny zielone, ogrody i hale garażowe – zadbane przez cały rok.</p>
+                    </div>
                 </div>
-                <div class="flex items-start gap-4 items-center">
-                    <span class="text-2xl mt-1 md:text-6xl">❄️</span>
-                    <span class="text-blue-900 text-xl">
-                        Profesjonalne <span class="font-bold">odśnieżanie</span> chodników, parkingów i innych
-                        przestrzeni
-                    </span>
+
+                <div class="flex gap-4 p-5 rounded-2xl bg-slate-50 border border-slate-100 anim anim-delay-1">
+                    <div class="w-10 h-10 rounded-xl bg-cyan-100 flex items-center justify-center flex-shrink-0">
+                        <svg class="w-5 h-5 text-cyan-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 15a4 4 0 004 4h9a5 5 0 10-4.9-6H7a4 4 0 00-4 4v1z"/></svg>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-slate-800 mb-1">Odśnieżanie</h3>
+                        <p class="text-slate-500 text-sm">Profesjonalne odśnieżanie chodników, parkingów i przestrzeni zewnętrznych.</p>
+                    </div>
                 </div>
-                <div class="flex items-start gap-4 items-center">
-                    <span class="text-2xl mt-1 md:text-6xl">⚙️</span>
-                    <span class="text-blue-900 text-xl">
-                        Rozwiązania dostosowane do <span class="font-bold">indywidualnych potrzeb</span> wspólnoty
-                    </span>
-                </div>
-                <div class="flex items-start gap-4 items-center">
-                    <span class="text-2xl mt-1 md:text-6xl">⭐</span>
-                    <span class="text-blue-900 text-2xl">
-                        Nacisk na <span class="font-bold">jakość i terminowość</span> usług
-                    </span>
+
+                <div class="flex gap-4 p-5 rounded-2xl bg-slate-50 border border-slate-100 anim anim-delay-2">
+                    <div class="w-10 h-10 rounded-xl bg-orange-100 flex items-center justify-center flex-shrink-0">
+                        <svg class="w-5 h-5 text-orange-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/></svg>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-slate-800 mb-1">Rozwiązania na miarę</h3>
+                        <p class="text-slate-500 text-sm">Oferta dostosowana do potrzeb każdej wspólnoty – nacisk na jakość i terminowość.</p>
+                    </div>
                 </div>
             </div>
 
-            <div class="text-blue-700 text-base text-center mt-10">
-                Sprzątamy w Gdyni.
-            </div>
+            <p class="text-center text-slate-400 text-sm mt-8">Obsługujemy wspólnoty w Gdyni i okolicach.</p>
         </div>
     </section>
 
+    <!-- Wave: white → safety dark -->
+    <div aria-hidden="true" style="line-height:0; font-size:0; background:#ffffff; margin-bottom:-1px;">
+        <svg viewBox="0 0 1440 70" preserveAspectRatio="none" style="width:100%;height:56px;display:block;fill:#0f172a;">
+            <path d="M0,35 C180,70 360,0 540,35 C720,70 900,0 1080,35 C1260,70 1350,20 1440,35 L1440,70 L0,70 Z"/>
+        </svg>
+    </div>
 
-    <!-- YOUR SAFETY IS OUR PRIORITY -->
-    <section class="w-full bg-white py-16 md:py-20">
-        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl md:text-4xl font-extrabold text-blue-900 mb-10 text-center">
-                Bezpieczny dom to spokojna głowa – zadbaj o przeglądy!
-            </h2>
+    <!-- SAFETY SECTION -->
+    <section class="w-full bg-slate-900 text-white py-14 md:py-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10 anim">
+                <h2 class="text-3xl md:text-4xl font-extrabold mb-3">Bezpieczny dom – zadbaj o przeglądy</h2>
+                <p class="text-slate-400 text-lg max-w-xl mx-auto">Regularne przeglądy to Twój obowiązek prawny i gwarancja bezpieczeństwa.</p>
+            </div>
 
-            <div class="space-y-6">
-                <!-- Legal Compliance Card -->
-                <div class="flex items-start gap-4 bg-blue-50 rounded-xl p-6 shadow-sm border border-blue-100">
-                    <span class="text-3xl mt-1 flex-shrink-0">📜</span>
-                    <div>
-                        <h3 class="font-bold text-blue-800 text-lg mb-1">Regularne przeglądy to Twój obowiązek i
-                            bezpieczeństwo</h3>
-                        <p class="text-blue-900 text-base">
-                            Pamiętaj o corocznym przeglądzie technicznym instalacji i urządzeń grzewczych (zgodnie z
-                            Art. 62 Prawa budowlanego). Dotyczy to instalacji gazowych, kominów i innych urządzeń.
-                            Działaj zgodnie z przepisami i śpij spokojnie!
-                        </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-7">
+                <div class="rounded-2xl p-6 border border-blue-800/40 bg-blue-900/20 anim">
+                    <div class="w-10 h-10 rounded-xl bg-blue-800/50 flex items-center justify-center mb-4">
+                        <svg class="w-5 h-5 text-blue-300" fill="currentColor" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>
                     </div>
+                    <h3 class="font-bold text-white mb-2">Przeglądy roczne</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Coroczny przegląd techniczny instalacji i urządzeń grzewczych jest wymagany przez Art. 62 Prawa budowlanego.</p>
                 </div>
 
-                <!-- CO & Smoke Detector Card -->
-                <div class="flex items-start gap-4 bg-yellow-50 rounded-xl p-6 shadow-sm border border-yellow-200">
-                    <span class="text-3xl mt-1 flex-shrink-0">🚨</span>
-                    <div>
-                        <h3 class="font-bold text-yellow-800 text-lg mb-1">Czujniki CO i dymu – Twój cichy strażnik</h3>
-                        <p class="text-blue-900 text-base">
-                            W nowych budynkach montaż czujników tlenku węgla (czadu) i dymu jest obowiązkowy (do 2025
-                            r.). To niewielka inwestycja, która chroni przed niewidocznym zagrożeniem i może uratować
-                            życie. Nie ryzykuj!
-                        </p>
+                <div class="rounded-2xl p-6 border border-yellow-700/40 bg-yellow-900/10 anim anim-delay-1">
+                    <div class="w-10 h-10 rounded-xl bg-yellow-800/40 flex items-center justify-center mb-4">
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
                     </div>
+                    <h3 class="font-bold text-white mb-2">Czujniki CO i dymu</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">W nowych budynkach montaż czujników tlenku węgla i dymu jest obowiązkowy. Niewielka inwestycja, która ratuje życie.</p>
                 </div>
 
-                <!-- Chimney Check Card -->
-                <div class="flex items-start gap-4 bg-green-50 rounded-xl p-6 shadow-sm border border-green-100">
-                    <span class="text-3xl mt-1 flex-shrink-0">✅</span>
-                    <div>
-                        <h3 class="font-bold text-green-800 text-lg mb-1">Sprawne kominy = Bezpieczne ogrzewanie</h3>
-                        <p class="text-blue-900 text-base">
-                            Regularne przeglądy kominowe (spalinowe, dymowe, wentylacyjne) są kluczowe dla
-                            bezpieczeństwa i efektywnego działania Twoich urządzeń grzewczych. Zadbaj o to z nami!
-                        </p>
+                <div class="rounded-2xl p-6 border border-green-800/40 bg-green-900/10 anim anim-delay-2">
+                    <div class="w-10 h-10 rounded-xl bg-green-800/40 flex items-center justify-center mb-4">
+                        <svg class="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20A10 10 0 0012 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
                     </div>
+                    <h3 class="font-bold text-white mb-2">Sprawne kominy</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Regularne przeglądy kominów (spalinowych, dymowych i wentylacyjnych) są kluczowe dla bezpieczeństwa i efektywności.</p>
                 </div>
             </div>
 
-            <!-- Final Important Note -->
-            <div class="mt-10 bg-red-50 border border-red-200 rounded-xl p-5 text-center">
-                <!-- Increased margin and padding -->
-                <p class="text-red-800 font-semibold">
-                    <span class="font-bold">Pamiętaj:</span> Tlenek węgla (czad) jest niewidoczny, bezwonny i
-                    śmiertelnie niebezpieczny. Regularny serwis i sprawny czujnik to najlepsza ochrona dla Ciebie i
-                    Twoich bliskich.
+            <div class="bg-red-900/25 border border-red-700/40 rounded-2xl p-5 text-center anim">
+                <p class="text-red-200 font-medium text-sm">
+                    <span class="font-bold text-red-400">Uwaga:</span> Tlenek węgla (czad) jest niewidoczny, bezwonny i śmiertelnie niebezpieczny. Regularny serwis i sprawny czujnik to najlepsza ochrona dla Ciebie i Twoich bliskich.
                 </p>
             </div>
         </div>
+
     </section>
 
+    <!-- Wave: safety dark → partner light -->
+    <div aria-hidden="true" style="line-height:0; font-size:0; background:#0f172a; margin-bottom:-1px;">
+        <svg viewBox="0 0 1440 60" preserveAspectRatio="none" style="width:100%;height:48px;display:block;fill:#f8fafc;">
+            <path d="M0,20 C480,60 960,0 1440,30 L1440,60 L0,60 Z"/>
+        </svg>
+    </div>
 
-    <!-- CTA SECTION -->
-    <section class="w-full bg-gradient-to-br from-blue-100 via-white to-blue-200 py-16 md:py-20">
-        <!-- Adjusted gradient and padding -->
-        <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-6">Potrzebujesz pomocy lub wyceny?</h2>
-            <a href="tel:++48452221328"
-                class="inline-block text-3xl md:text-4xl font-extrabold text-blue-900 hover:text-blue-600 transition-colors duration-150 tracking-tight bg-white/80 border border-blue-100 rounded-full px-10 py-5 shadow-lg transform hover:scale-105">
-                +48 452 221 328
-            </a>
-            <a class="mt-2 transition-transform duration-300 hover:scale-105 focus:scale-105 group rounded-full"
-                href="https://www.facebook.com/people/Chochół-Serwis-Dawid-Chochół/61572947396676/?mibextid=wwXIfr"
-                target="_blank"
-                style="display: inline-block; padding: 10px 20px; background-color: #1877F2; color: white; text-decoration: none;">
-                <strong>Odwiedź nas na Facebooku</strong>
-            </a>
-            <div class="mt-5 text-blue-700 text-base"> <!-- Increased font size -->
-                E-mail: <a href="mailto:serwis.chochol@gmail.com"
-                    class="underline hover:text-blue-900">serwis.chochol@gmail.com</a>
-            </div>
+    <!-- PARTNER -->
+    <section class="w-full py-7" style="background:#f8fafc;">
+        <div class="max-w-2xl mx-auto px-4 text-center">
+            <p class="text-slate-500 text-sm">Współpracujemy z <span class="font-semibold text-slate-700">Centrum Serwisowym Pyzik</span> – polecamy ich usługi.
+            Kontakt: <a href="tel:517623833" class="text-blue-600 hover:underline font-medium">517 623 833</a></p>
         </div>
     </section>
+
+    <!-- HOW IT WORKS + SOCIAL PROOF (combined) -->
+    <section class="w-full py-14 md:py-20" style="background: #f8fafc;">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <!-- Steps header -->
+            <div class="text-center mb-12 anim">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 mb-3">Jak działamy?</h2>
+                <p class="text-slate-500 text-lg max-w-lg mx-auto">Trzy proste kroki dzielą Cię od sprawnego ogrzewania.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 relative">
+                <!-- Connector line (desktop only) -->
+                <div class="hidden md:block absolute top-10 left-1/3 right-1/3 h-px" style="background: linear-gradient(90deg, #e2e8f0, #cbd5e1, #e2e8f0);"></div>
+
+                <!-- Step 1 -->
+                <div class="flex flex-col items-center text-center anim">
+                    <div class="relative mb-5">
+                        <div class="w-20 h-20 rounded-2xl flex items-center justify-center shadow-lg" style="background: linear-gradient(135deg, #f97316, #ea580c);">
+                            <svg class="w-9 h-9 text-white" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                            </svg>
+                        </div>
+                        <span class="absolute -top-2 -right-2 w-7 h-7 rounded-full bg-slate-800 text-white text-xs font-bold flex items-center justify-center border-2 border-white shadow">1</span>
+                    </div>
+                    <h3 class="font-bold text-slate-900 text-lg mb-2">Zadzwoń lub napisz</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed max-w-xs">Opisz problem przez telefon lub e-mail. Odpowiemy szybko i bezpłatnie doradzimy co robić.</p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="flex flex-col items-center text-center anim anim-delay-1">
+                    <div class="relative mb-5">
+                        <div class="w-20 h-20 rounded-2xl flex items-center justify-center shadow-lg" style="background: linear-gradient(135deg, #1d4ed8, #1e3a8a);">
+                            <svg class="w-9 h-9 text-white" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                            </svg>
+                        </div>
+                        <span class="absolute -top-2 -right-2 w-7 h-7 rounded-full bg-slate-800 text-white text-xs font-bold flex items-center justify-center border-2 border-white shadow">2</span>
+                    </div>
+                    <h3 class="font-bold text-slate-900 text-lg mb-2">Ustalamy termin</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed max-w-xs">Wybieramy dogodny dla Ciebie termin wizyty. Przyjeżdżamy punktualnie z odpowiednim sprzętem.</p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="flex flex-col items-center text-center anim anim-delay-2">
+                    <div class="relative mb-5">
+                        <div class="w-20 h-20 rounded-2xl flex items-center justify-center shadow-lg" style="background: linear-gradient(135deg, #16a34a, #15803d);">
+                            <svg class="w-9 h-9 text-white" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <span class="absolute -top-2 -right-2 w-7 h-7 rounded-full bg-slate-800 text-white text-xs font-bold flex items-center justify-center border-2 border-white shadow">3</span>
+                    </div>
+                    <h3 class="font-bold text-slate-900 text-lg mb-2">Problem rozwiązany</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed max-w-xs">Diagnozujemy usterkę, naprawiamy lub przeprowadzamy przegląd. Wystawiamy dokumentację.</p>
+                </div>
+            </div>
+
+            <!-- Separator with rating pill -->
+            <div class="mt-14 mb-10 flex items-center gap-4 anim">
+                <div class="flex-1 h-px bg-slate-200"></div>
+                <a href="https://fixly.pl/profil/wpdg6wkl" target="_blank"
+                   class="flex items-center gap-2 bg-white rounded-full px-5 py-2 border border-slate-200 shadow-sm hover:shadow transition-shadow">
+                    <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                    <span class="text-slate-800 font-bold text-sm">5.0</span>
+                    <span class="text-slate-400 text-xs">· opinie klientów na Fixly</span>
+                </a>
+                <div class="flex-1 h-px bg-slate-200"></div>
+            </div>
+
+            <!-- Review cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-5 mb-10">
+
+                <!-- Maria -->
+                <div class="bg-white rounded-2xl p-6 border border-slate-100 shadow-sm anim">
+                    <div class="flex gap-0.5 mb-1.5">
+                        <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                    </div>
+                    <div class="text-xs font-semibold text-blue-600 mb-3">Serwis pieców i kotłów</div>
+                    <p class="text-slate-600 text-sm leading-relaxed italic mb-4">"Fachowiec o dużej kulturze osobistej, konkretny i doskonale wyposażony w potrzebny sprzęt. Usterka kotła usunięta w dniu zgłoszenia."</p>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-2">
+                            <div class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 text-xs font-bold">M</div>
+                            <div>
+                                <div class="text-slate-800 text-xs font-semibold">Maria</div>
+                                <div class="text-slate-400 text-xs">Wejherowo</div>
+                            </div>
+                        </div>
+                        <div class="text-slate-400 text-xs">cze 2022 · Fixly</div>
+                    </div>
+                </div>
+
+                <!-- Darek -->
+                <div class="bg-white rounded-2xl p-6 border border-slate-100 shadow-sm anim anim-delay-1">
+                    <div class="flex gap-0.5 mb-1.5">
+                        <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                    </div>
+                    <div class="text-xs font-semibold text-blue-600 mb-3">Montaż pompy ciepła</div>
+                    <p class="text-slate-600 text-sm leading-relaxed italic mb-4">"Usługa serwisowa - bardzo szybki termin, przystępny koszt, pełen profesjonalizm w każdym wymiarze - diagnoza, wiedza, umiejętności. POLECAM!"</p>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-2">
+                            <div class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 text-xs font-bold">D</div>
+                            <div>
+                                <div class="text-slate-800 text-xs font-semibold">Darek</div>
+                                <div class="text-slate-400 text-xs">Otomin</div>
+                            </div>
+                        </div>
+                        <div class="text-slate-400 text-xs">cze 2022 · Fixly</div>
+                    </div>
+                </div>
+
+                <!-- Bartosz -->
+                <div class="bg-white rounded-2xl p-6 border border-slate-100 shadow-sm anim anim-delay-2">
+                    <div class="flex gap-0.5 mb-1.5">
+                        <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                    </div>
+                    <div class="text-xs font-semibold text-blue-600 mb-3">Ogrzewanie gazowe</div>
+                    <p class="text-slate-600 text-sm leading-relaxed italic mb-4">"Super obsługa. Pan Dawid wszystko fachowo wytłumaczył, oraz usunął nieprawidłowości wykryte podczas przeglądu pieca. Z pewnością będę korzystał w przyszłości!"</p>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-2">
+                            <div class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 text-xs font-bold">BC</div>
+                            <div>
+                                <div class="text-slate-800 text-xs font-semibold">Bartosz</div>
+                                <div class="text-slate-400 text-xs">Gdańsk</div>
+                            </div>
+                        </div>
+                        <div class="text-slate-400 text-xs">maj 2022 · Fixly</div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- CTA -->
+            <div class="text-center mt-10 anim">
+                <a href="tel:+48452221328"
+                   class="orange-btn inline-flex items-center gap-2.5 text-white font-bold py-4 px-8 rounded-xl text-lg shadow-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/>
+                    </svg>
+                    Zacznij od kroku 1 – zadzwoń teraz
+                </a>
+
+                <div class="flex items-center justify-center gap-5 mt-5 anim anim-delay-1">
+                    <a href="mailto:serwis.chochol@gmail.com"
+                       class="flex items-center gap-1.5 text-slate-500 hover:text-slate-800 transition-colors text-sm">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                        serwis.chochol@gmail.com
+                    </a>
+                    <span class="text-slate-300">·</span>
+                    <a href="https://www.facebook.com/people/Chochół-Serwis-Dawid-Chochół/61572947396676/?mibextid=wwXIfr"
+                       target="_blank"
+                       class="flex items-center gap-1.5 text-slate-500 hover:text-[#1877F2] transition-colors text-sm font-medium">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        Facebook
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Wave: combined section → footer -->
+    <div aria-hidden="true" style="line-height:0; font-size:0; background:#f8fafc; margin-bottom:-1px;">
+        <svg viewBox="0 0 1440 60" preserveAspectRatio="none" style="width:100%;height:48px;display:block;fill:#020617;">
+            <path d="M0,20 C360,60 1080,0 1440,30 L1440,60 L0,60 Z"/>
+        </svg>
+    </div>
 
     <!-- FOOTER -->
-    <footer class="w-full bg-gray-800 text-gray-400 py-6 text-center text-sm">
+    <footer class="w-full bg-slate-950 text-slate-500 py-6 text-center text-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            © 2025 Chochół Serwis. Wszelkie prawa zastrzeżone. | NIP: 9581745739
-            <!-- Add privacy policy link etc. if needed -->
+            © 2025 Chochół Serwis · Dawid Chochół · NIP: 9581745739
         </div>
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 
