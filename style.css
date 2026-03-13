@@ -64,9 +64,3 @@ html.js-anim-ready .anim.visible.anim-delay-6 { animation-delay: 0.42s; }
     background-size: 28px 28px;
 }
 
-/* Mobile floating CTA */
-.mobile-cta { display: none; }
-@media (max-width: 639px) {
-    .mobile-cta { display: flex; }
-    body { padding-bottom: 72px; }
-}
