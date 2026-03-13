@@ -1,0 +1,72 @@
+body { font-family: 'Inter', sans-serif; }
+
+.hero-gradient {
+    background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 60%, #1d4ed8 100%);
+}
+.cta-gradient {
+    background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 60%, #1d4ed8 100%);
+}
+.orange-btn {
+    background: linear-gradient(135deg, #f97316, #ea580c);
+    transition: all 0.2s ease;
+}
+.orange-btn:hover {
+    background: linear-gradient(135deg, #fb923c, #f97316);
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(249,115,22,0.45);
+}
+.card-hover {
+    transition: all 0.25s ease;
+}
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 24px 48px rgba(0,0,0,0.10);
+}
+.brand-img {
+    filter: grayscale(100%);
+    opacity: 0.5;
+    transition: all 0.25s ease;
+}
+.brand-img:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+.phone-link {
+    transition: all 0.2s ease;
+}
+.phone-link:hover {
+    transform: scale(1.04);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+}
+
+/* Entrance animations — only active when JS adds .js-anim-ready to <html> */
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+html.js-anim-ready .anim {
+    opacity: 0;
+    transform: translateY(24px);
+}
+html.js-anim-ready .anim.visible {
+    animation: fadeInUp 0.55s cubic-bezier(0.22,1,0.36,1) forwards;
+}
+html.js-anim-ready .anim.visible.anim-delay-1 { animation-delay: 0.07s; }
+html.js-anim-ready .anim.visible.anim-delay-2 { animation-delay: 0.14s; }
+html.js-anim-ready .anim.visible.anim-delay-3 { animation-delay: 0.21s; }
+html.js-anim-ready .anim.visible.anim-delay-4 { animation-delay: 0.28s; }
+html.js-anim-ready .anim.visible.anim-delay-5 { animation-delay: 0.35s; }
+html.js-anim-ready .anim.visible.anim-delay-6 { animation-delay: 0.42s; }
+
+/* Hero dot pattern */
+.hero-dots {
+    background-image: radial-gradient(circle, rgba(255,255,255,0.07) 1px, transparent 1px);
+    background-size: 28px 28px;
+}
+
+/* Mobile floating CTA */
+.mobile-cta { display: none; }
+@media (max-width: 639px) {
+    .mobile-cta { display: flex; }
+    body { padding-bottom: 72px; }
+}
